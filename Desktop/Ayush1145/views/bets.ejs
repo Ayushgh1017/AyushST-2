@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BETS Collection</title>
+</head>
+<body>
+    <h1>Collection</h1>
+    <table>
+        <tr>
+            <th>Username</th>
+            <th>Name</th>
+            <th>Game</th>
+            <th>Price</th>
+        </tr>
+        <% bets.forEach(function(bet) { %>
+            <tr>
+                <td><%= bet.user.username %></td>
+                <td><%= bet.user.name %></td>
+                <td><%= bet.Game %></td>
+                <td><%= bet.price %></td>
+            </tr>
+        <% }); %>
+    </table>
+</body>
+</html>
